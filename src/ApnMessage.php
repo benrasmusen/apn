@@ -194,6 +194,20 @@ class ApnMessage
     }
 
     /**
+     * Add url args
+     *
+     * @param array $url_args
+     *
+     * @return $this
+     */
+    public function setUrlArgs($url_args = [])
+    {
+        $this->url_args = $url_args;
+
+        return $this;
+    }
+
+    /**
      * Add an action to the notification.
      *
      * @param string $action

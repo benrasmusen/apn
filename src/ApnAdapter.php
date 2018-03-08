@@ -26,6 +26,7 @@ class ApnAdapter
         $packet->setSound($message->sound);
         $packet->setCategory($message->category);
         $packet->setContentAvailable($message->contentAvailable);
+        $packet->setUrlArgs($message->url_args);
         $packet->setAlert($alert);
         $packet->setCustom($message->custom);
 
